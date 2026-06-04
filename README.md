@@ -4,10 +4,7 @@ Large vision-language models (LVLMs) have demonstrated significant potential in 
 
 ![Architecture](./llava-adapter.png)
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 695c04a8f3c67123d99dc054896cbab4f2b63a87
 ## LLaVA-Sentiment
 
 Multimodal (image + text) sentiment analysis built on LLaVA-v1.5. Three modules are added on top of the original LLaVA stack:

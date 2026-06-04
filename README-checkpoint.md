@@ -1,14 +1,4 @@
-# LLaVA-Adapter: Adapting Large Vision-Language Model for Multimodal Sentiment Analysis
-
-Large vision-language models (LVLMs) have demonstrated significant potential in multimodal applications due to their strong ability to simultaneously process images and text. Extending LVLMs to multimodal sentiment analysis (MSA) tasks has received great attention recently. However, current LVLM-based MSA methods suffer from some drawbacks: inherently unidirectional causal attention leads to limited cross-modal interactions, “generate-then-parse” prediction results in misclassification of sentiment, and fixed image patching strategy yields fragmented visual sentiment semantics. Therefore, this study proposes a novel MSA model that is based on the large language and vision assistant (LLaVA) and extends it, termed LLaVA-Adapter. The model includes two core adaptation modules: bidirectional cross-modal attention adapter (Bi-CMAA) and dual-head collaborative classification adapter (DHCCA), along with a two-stage training strategy to enhance the model stability. The proposed Bi-CMAA performs deep bidirectional interaction between text tokens and semantically-aware visual tokens, enhancing the model’s cross-modal feature fusion capability. The DHCCA incorporates a classification head into prediction module, establishing a collaborative classification calibration in inference stage and thus improving the sentiment classification performance of MSA. Additionally, a semantic-aware adaptive patch partitioning module (SAPP) is proposed in the visual branch, which uses semantic information to adaptively guide the model to merge initial patch-level features, enabling the model to effectively preserve visual semantic integrity. Extensive experiments on four datasets, including MVSA-Single, MVSA-Multiple, TWITTER-15 and TWITTER-17 demonstrate the effectiveness of the proposed LLaVA-Adapter.
-
-![Architecture](./llava-adapter.png)
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 695c04a8f3c67123d99dc054896cbab4f2b63a87
-## LLaVA-Sentiment
+# LLaVA-Sentiment
 
 Multimodal (image + text) sentiment analysis built on LLaVA-v1.5. Three modules are added on top of the original LLaVA stack:
 
